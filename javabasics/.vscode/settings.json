@@ -1,0 +1,10 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "application.experimental.rendererProfiling": true,
+    "timeline.pageOnScroll": false,
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
+    "testing.alwaysRevealTestOnStateChange": true,
+    "terminal.integrated.focusAfterRun": "terminal",
+    "debug.toolBarLocation": "docked",
+    "testing.defaultGutterClickAction": "run"
+}

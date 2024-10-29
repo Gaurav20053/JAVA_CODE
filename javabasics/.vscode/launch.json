@@ -1,0 +1,66 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "input",
+            "request": "launch",
+            "mainClass": "input",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "day2",
+            "request": "launch",
+            "mainClass": "day2",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "day1",
+            "request": "launch",
+            "mainClass": "day1",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "homeworklec8",
+            "request": "launch",
+            "mainClass": "homeworklec8",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "first",
+            "request": "launch",
+            "mainClass": "first",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "loops",
+            "request": "launch",
+            "mainClass": "loops",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "ifelse",
+            "request": "launch",
+            "mainClass": "ifelse",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "pattern",
+            "projectName": "javabasics_1d20cbc7"
+        },
+        {
+            "type": "node-terminal",
+            "name": "JavaScript Debug Terminal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
