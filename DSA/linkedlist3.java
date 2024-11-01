@@ -123,6 +123,44 @@ public Node mergeSort(Node head){
         // merge
         return merge(newLeft,newRight);
     }
+   
+   
+public  void zigZag(){
+    // find mid
+    Node slow=head;
+    Node fast=head.next;
+    while(fast!=null&&fast.next!=null){
+        slow=slow.next;
+        fast=fast.next.next;
+    }
+    Node mid=slow;
+    // reverse 2nd half
+    Node curr=mid.next;
+    mid.next=null;
+    Node prev=null;
+    Node next;
+    while(curr!=null){
+        next=curr.next;
+        curr.next=prev;
+        prev=curr;
+        curr=next;
+
+    }
+    Node leftH=head;
+    Node rightH =prev;
+    Node nextL,nextR;
+    // alt merge-zig-zag merge
+while(leftH!=null&&rightH!=null){
+nextL=leftH.next;
+leftH.next=rightH;
+nextR=rightH.next;
+rightH.next=nextL;
+
+leftH=nextL;
+rightH=nextR;
+}
+}
+   
     public static void main(String[] args) {
     // LinkedList<Integer>list=new LinkedList<>();
     linkedlist3 list=new linkedlist3();//for implementind merge Sort
@@ -133,7 +171,12 @@ public Node mergeSort(Node head){
     list.addlast(88);
     list.addlast(23);
     list.printList();
+    
+    list.zigZag();
+    list.printList();
     list.head=list.mergeSort(list.head);
+    list.printList();
+    list.zigZag();
     list.printList();
     // list.removeLast();
     // list.removeFirst();
